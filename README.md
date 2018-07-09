@@ -1,8 +1,15 @@
 # Starter
 
-A [Nuxt.js](https://github.com/nuxt/nuxt.js) starter project template without the distraction of a complicated development environment.
+A [Nuxt.js](https://github.com/nuxt/nuxt.js) starter project template without the distraction of a complicated development environment, forked with some modifications that I make to every project I start.
 
-Live demo: https://starter.nuxtjs.org
+## Modifications from Upstream
+
+- ESLint config yells about not using trailing commas
+- SASS/SCSS added by default
+  - Globally loaded `application.scss` stylesheet
+  - A `common.scss` file injected into each component for variables/mixins
+- NuxtJS logo component removed from template
+- Empty `util` directory added
 
 ## Prerequisites
 
@@ -13,8 +20,8 @@ Make sure to have `node 8.0+` and `npm 5.0+` installed
 This is a project template for [vue-cli](https://github.com/vuejs/vue-cli).
 
 ``` bash
-$ vue init nuxt-community/starter-template my-project  
-$ cd my-project                     
+$ vue init jwkicklighter/starter-template my-project
+$ cd my-project
 # install dependencies
 $ npm install # Or yarn install
 ```
